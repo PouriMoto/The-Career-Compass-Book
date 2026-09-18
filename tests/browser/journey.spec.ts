@@ -1,0 +1,23 @@
+import {test,expect} from '@playwright/test';
+test('journey saves restores completes and exports',async({page,context})=>{
+  await page.goto('/legacy');await expect(page.locator('html')).toHaveAttribute('dir','rtl');
+  await page.getByRole('button',{name:'شروع سفر'}).click();
+  await expect(page.getByRole('button',{name:'ادامه تمرین'})).toBeDisabled();
+  await page.locator('textarea').fill('می‌خواهم مسیر کاری روشن‌تری داشته باشم');
+  await expect(page.locator('.save-status')).toContainText('ذخیره‌اند');
+  await page.reload();await page.getByRole('button',{name:'شروع سفر'}).click();
+  await expect(page.locator('textarea')).toHaveValue('می‌خواهم مسیر کاری روشن‌تری داشته باشم');
+  await page.getByRole('button',{name:'ادامه تمرین'}).click();
+  await page.locator('textarea').fill('یک روز همراه با یادگیری و خلق محصول');
+  await page.getByRole('button',{name:'ادامه تمرین'}).click();await context.setOffline(true);
+  await page.locator('textarea').fill('هر هفته یک آزمایش کوچک انجام دهم');
+  await page.getByRole('button',{name:'پایان مرحله'}).click();
+  await expect(page.getByRole('heading',{name:'این قدم را برداشتی!'})).toBeVisible();
+  await expect(page.locator('.save-status')).toContainText('ذخیره‌اند');
+  const download=page.waitForEvent('download');await page.getByRole('button',{name:'دریافت پشتیبان JSON'}).click();
+  expect((await download).suggestedFilename()).toBe('career-compass-backup.json');
+  await context.setOffline(false);await page.reload();await expect(page.locator('progress')).toHaveAttribute('value','1');
+  await expect(page.getByRole('button',{name:/داستان تو/})).toBeDisabled();
+  await page.screenshot({path:'docs/qa-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1280,height:900});await page.screenshot({path:'docs/qa-desktop.png',fullPage:true});
+});

@@ -1,0 +1,25 @@
+{
+  "name": "@compass/studio-kit",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./engine": "./src/engine.ts",
+    "./content": "./src/content.ts",
+    "./storage": "./src/storage.ts",
+    "./session": "./src/session.ts",
+    "./ui": "./src/ui.tsx",
+    "./guided": "./src/guided.ts",
+    "./sketch": "./src/sketch.tsx",
+    "./guided-rules": "./src/guided-rules.ts",
+    "./visual-map": "./src/visual-map.tsx",
+    "./interactions": "./src/interactions.tsx"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "dexie": "^4",
+    "zustand": "^5",
+    "zod": "^4",
+    "yaml": "^2",
+    "roughjs": "^4.6.6"
+  }
+}

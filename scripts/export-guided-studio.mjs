@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const root=path.resolve('../ai-studio-for-making-digital-product');
+const release=path.join(root,'releases/career-compass-guided-0.3.0');
+if(fs.existsSync(release))throw Error('Release already exists; do not overwrite snapshots.');
+fs.mkdirSync(release,{recursive:true});
+for(const [source,target] of [['packages/studio-kit','studio-kit'],['src/features/guided/guided.css','styles/guided.css'],['src/app/globals.css','styles/base.css'],['studio/guided-components.json','reference/components.json'],['studio/guided-assets.json','reference/assets.json'],['docs/guided-review-build.md','README.md'],['content/fa/guided-course.json','examples/career-compass-course.json'],['tests/guided.test.ts','reference/guided.test.ts'],['tests/browser/guided.spec.ts','reference/guided.spec.ts'],['public/licenses/vazirmatn-OFL.txt','licenses/vazirmatn-OFL.txt']]){const dest=path.join(release,target);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.cpSync(source,dest,{recursive:true});}
+const entries=[];function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())walk(file);else entries.push({file:path.relative(release,file),sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')});}}walk(release);
+fs.writeFileSync(path.join(root,'career-compass-guided-0.3.0-manifest.json'),JSON.stringify(entries,null,2));
+fs.writeFileSync(path.join(root,'projects/career-compass-guided-0.3.0.md'),'# Guided workbench — 2026-09-18\n\nSnapshot: releases/career-compass-guided-0.3.0.\n\nNine editable workbooks; Rough.js SVG, typed answer engine, starter evidence-linked rules and interaction renderers. Read reference/components.json for exact limits. This is a review build, not completed R1–R9.\n\nUse studio-kit exports with React, roughjs, zod, yaml, Dexie and Zustand peers. Styles are in styles/; Vazirmatn imports require @fontsource/vazirmatn. Copy component styles selectively; UI labels are Persian. The course example is project-specific; do not treat it as a generic content template. reference tests are evidence tied to the source project, not a standalone test harness.\n\nSource of truth remains The-Career-Compass-Book/packages/studio-kit. Do not edit this snapshot. Prior releases and Remember stay unchanged.\n');
+for(const entry of entries){if(crypto.createHash('sha256').update(fs.readFileSync(path.join(release,entry.file))).digest('hex')!==entry.sha256)throw Error(entry.file);}
+console.log(`Exported and verified ${entries.length} files: ${release}`);

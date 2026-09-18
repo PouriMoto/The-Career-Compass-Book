@@ -1,0 +1,11 @@
+{
+  "version":1,
+  "policy":"Runtime dependencies are bundled locally. No runtime CDN has been adopted. Exact resolved versions live in package-lock.json.",
+  "libraries":[
+    {"id":"dexie","usage":"IndexedDB adapter with atomic revision check","module":"storage","delivery":"npm","cdnUrl":null,"integrity":null,"offline":"bundled","status":"used"},
+    {"id":"zustand","usage":"per-session reactive state, no global singleton","module":"session","delivery":"npm","cdnUrl":null,"integrity":null,"offline":"bundled","status":"used"},
+    {"id":"yaml","usage":"server-side content parsing","module":"content","delivery":"npm","cdnUrl":null,"integrity":null,"offline":"content serialized into page","status":"used"},
+    {"id":"zod","usage":"content schema and structural validation","module":"content","delivery":"npm","cdnUrl":null,"integrity":null,"status":"used"}
+  ],
+  "futureCdnEntryRequiredFields":["id","exactVersion","sourceUrl","cdnUrl","integrity","license","useCases","offlineFallback","lastVerifiedAt"]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "generatedBy": "scripts/build-pwa.mjs",
+  "source": "Original geometric compass SVG defined in build script",
+  "thirdPartyArtwork": false,
+  "assets": [
+    {"path":"public/icons/icon-192.png","dimensions":[192,192],"use":"PWA icon"},
+    {"path":"public/icons/icon-512.png","dimensions":[512,512],"use":"PWA icon"},
+    {"path":"public/icons/maskable-512.png","dimensions":[512,512],"use":"Maskable PWA icon"}
+  ],
+  "note":"Input asset inventory remains unchanged. No audio is loaded at runtime."
+}

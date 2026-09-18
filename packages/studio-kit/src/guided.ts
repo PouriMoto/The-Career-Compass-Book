@@ -1,0 +1,15 @@
+import { z } from 'zod';
+export const stepSchema=z.object({id:z.string(),title:z.string(),hint:z.string(),kind:z.enum(['choice','multi','rank','scale','items','wheel','review','reflection']),options:z.array(z.string()).default([]),max:z.number().default(3)});
+export const guidedCourseSchema=z.array(z.object({id:z.string(),title:z.string(),caption:z.string(),symbol:z.string(),color:z.string(),map:z.enum(['path','timeline','portrait','wheel','matrix','network','day','paths','board']),steps:z.array(stepSchema).min(1)})).length(9);
+export type GuidedStage=z.infer<typeof guidedCourseSchema>[number];
+export type GuidedStep=z.infer<typeof stepSchema>;
+export type GuidedAnswer={status:'known'|'unknown';values:string[];numbers?:Record<string,number>};
+export const guidedStateSchema=z.object({version:z.literal(2),answers:z.record(z.string(),z.object({status:z.enum(['known','unknown']),values:z.array(z.string().max(1000)).max(100),numbers:z.record(z.string(),z.number().int().min(1).max(5)).optional()})),completed:z.array(z.string()),stale:z.array(z.string()),stage:z.number().int().min(0).max(8),step:z.number().int().min(0),revision:z.number().int().min(0)});
+export type GuidedState=z.infer<typeof guidedStateSchema>;
+export const freshGuided=():GuidedState=>({version:2,answers:{},completed:[],stale:[],stage:0,step:0,revision:0});
+export const keyFor=(stage:GuidedStage,step:GuidedStep)=>`${stage.id}/${step.id}`;
+export function validAnswer(answer?:GuidedAnswer){return !!answer&&(answer.status==='unknown'||answer.values.some(v=>v.trim().length>0)||Object.keys(answer.numbers??{}).length>0);}
+export function completeGuided(state:GuidedState,stage:GuidedStage){if(!stage.steps.every(step=>validAnswer(state.answers[keyFor(stage,step)])))throw Error('Incomplete stage');return {...state,completed:[...new Set([...state.completed,stage.id])],stale:state.stale.filter(id=>id!==stage.id)};}
+export function changeGuided(state:GuidedState,course:GuidedStage[],answer:GuidedAnswer){const stage=course[state.stage];return {...state,answers:{...state.answers,[keyFor(stage,stage.steps[state.step])]:answer},stale:[...new Set([...state.stale,...course.slice(state.stage).filter(s=>state.completed.includes(s.id)).map(s=>s.id)])]};}
+export function stageFacts(stage:GuidedStage,state:GuidedState){return stage.steps.filter(s=>s.kind!=='review').map(step=>({id:step.id,title:step.title,answer:state.answers[keyFor(stage,step)]}));}
+export function restoreGuided(course:GuidedStage[],raw:unknown){const state=guidedStateSchema.parse(raw);if(state.step>=course[state.stage].steps.length)throw Error('Invalid cursor');const keys=new Set(course.flatMap(stage=>stage.steps.map(step=>keyFor(stage,step))));if(Object.keys(state.answers).some(key=>!keys.has(key)))throw Error('Unknown content');const completed=course.filter(stage=>state.completed.includes(stage.id)&&stage.steps.every(step=>validAnswer(state.answers[keyFor(stage,step)]))).map(s=>s.id);return {...state,completed,stale:state.stale.filter(id=>completed.includes(id))};}

@@ -1,0 +1,15 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import 'fake-indexeddb/auto';
+import { loadCourse } from '../src/content/load-course';
+import { advance, answerKey, canOpen, editAnswer, initialJourney, restore } from '@compass/studio-kit/engine';
+import { parseCourse } from '@compass/studio-kit/content';
+import { ConflictError, DexieJourneyRepository } from '@compass/studio-kit/storage';
+import { createSession } from '@compass/studio-kit/session';
+const course=loadCourse();
+test('content rejects duplicate ids and wrong scene ordering',()=>{const bad=structuredClone(course);bad.stages[0].scenes.reverse();assert.throws(()=>parseCourse(JSON.stringify(bad)));bad.stages[0].scenes.reverse();bad.stages[1].id=bad.stages[0].id;assert.throws(()=>parseCourse(JSON.stringify(bad)));});
+test('cannot bypass reflection; edits invalidate completion; future content stays closed',()=>{let j=initialJourney(course);assert.throws(()=>advance(course,j));for(let i=0;i<3;i++){j=editAnswer(j,course,'پاسخ معنادار');j=advance(course,j);}assert.equal(j.completed.length,1);assert.equal(canOpen(course,j,'history'),false);j=editAnswer(j,course,'تغییر پاسخ');assert.equal(j.completed.length,0);});
+test('backup validation rejects incompatible versions and clamps invalid scene positions',()=>{const j=initialJourney(course);assert.throws(()=>restore(course,{...j,contentVersion:99}));assert.equal(restore(course,{...j,sceneIndex:99}).sceneIndex,0);});
+test('Dexie persists across clients and prevents stale tab overwrite',async()=>{const name='test-'+crypto.randomUUID();const a=new DexieJourneyRepository(name);const b=new DexieJourneyRepository(name);const j={...initialJourney(course),revision:1};await a.save(j,0);assert.deepEqual(await b.load(course.id),j);await assert.rejects(()=>b.save({...j,revision:2},0),ConflictError);a.db.close();await b.db.delete();});
+test('autosave failure keeps draft, retry persists, hydration restores',async()=>{let fail=true;let saved:unknown;const repo={load:async()=>saved,save:async(j:unknown)=>{if(fail)throw Error('quota');saved=structuredClone(j);}};const session=createSession(course,repo);await session.hydrate();session.update(j=>editAnswer(j,course,'متن ذخیره'));assert.equal(await session.flush(),false);assert.equal(session.store.getState().status,'error');fail=false;assert.equal(await session.flush(),true);const next=createSession(course,repo);await next.hydrate();assert.equal(next.store.getState().journey.answers[answerKey('setting-out','setting-out-exercise')],'متن ذخیره');});
+test('edit while save is in flight persists newest revision',async()=>{let release:()=>void=()=>{};let writes=0;let saved:unknown;const gate=new Promise<void>(resolve=>{release=resolve;});const s=createSession(course,{load:async()=>undefined,save:async j=>{writes++;if(writes===1)await gate;saved=structuredClone(j);}});await s.hydrate();s.update(j=>editAnswer(j,course,'اولین'));const pending=s.flush();s.update(j=>editAnswer(j,course,'آخرین'));release();assert.equal(await pending,true);assert.equal(writes,2);assert.equal(restore(course,saved).answers['setting-out/setting-out-exercise'],'آخرین');});

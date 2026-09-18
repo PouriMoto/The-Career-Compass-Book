@@ -1,0 +1,55 @@
+id: career-compass
+version: 1
+title: قطب‌نمای مسیر تو
+description: هر قدم کوچک، شناختی تازه. مسیر حرفه‌ای‌ات را با تأمل و تمرین بساز.
+labels:
+  brand: CAREER COMPASS
+  path: مسیر کشف تو
+  progress: پیشرفت کل مسیر
+  start: شروع سفر
+  continue: ادامه تمرین
+  back: قدم قبل
+  home: بازگشت به مسیر
+  finish: پایان مرحله
+  loading: در حال بازیابی یادداشت‌ها…
+  saving: در حال ذخیره…
+  saved: یادداشت‌ها روی این دستگاه ذخیره‌اند
+  error: ذخیره یا بازیابی انجام نشد؛ یادداشت باز را خروجی بگیر و دوباره تلاش کن.
+  conflict: داده‌ها در تب دیگری تغییر کرده‌اند. ابتدا خروجی بگیر، سپس صفحه را تازه کن.
+  retry: تلاش دوباره
+  locked: قفل
+  soon: در دست ساخت
+  complete: این قدم را برداشتی!
+  completed: تکمیل‌شده
+  completionText: حالا نقطه شروع و تصویر مقصدت را کنار هم داری. هر وقت خواستی می‌توانی به یادداشت‌هایت برگردی.
+  review: مرور و ویرایش
+  export: دریافت پشتیبان JSON
+  import: بازیابی پشتیبان
+  importConfirm: پشتیبان جایگزین یادداشت‌های فعلی شود؟ پیش از ادامه می‌توانی خروجی بگیری.
+  invalidImport: فایل پشتیبان معتبر یا سازگار نیست.
+  sample: محتوای آزمایشی مرحله اول؛ تطبیق با تمرین‌های کتاب هنوز در انتظار بازبینی است.
+  exercise: تمرین
+  visualization: تصویر مسیر
+  reflection: بازتاب
+  answer: یادداشت تو
+  minimum: برای ادامه دست‌کم سه نویسه بنویس.
+  mapTitle: از امروز تا مقصد
+  today: نقطه شروع
+  destination: مقصد دلخواه
+  offline: اتصال اینترنت قطع است؛ ذخیره روی این دستگاه انجام می‌شود.
+  ai: مربی هوشمند در نسخه بعدی اضافه می‌شود؛ این مرحله بدون آن کامل است.
+  storageNote: با پاک‌شدن داده‌های مرورگر، یادداشت‌ها از دست می‌روند؛ پشتیبان بگیر.
+stages:
+  - id: setting-out
+    title: شروع مسیر
+    subtitle: Setting Out
+    available: true
+    scenes: []
+  - {id: history, title: داستان تو, subtitle: History, available: false, scenes: []}
+  - {id: preferences, title: ترجیح‌ها و امکان‌ها, subtitle: Preferences & Possibilities, available: false, scenes: []}
+  - {id: wheel, title: چرخ کار و زندگی, subtitle: Work/Life Wheel, available: false, scenes: []}
+  - {id: choices, title: انتخاب‌ها در بستر زندگی, subtitle: Choices in Context, available: false, scenes: []}
+  - {id: network, title: نقشه ارتباط‌ها, subtitle: Networking Map, available: false, scenes: []}
+  - {id: day, title: یک روز از زندگی, subtitle: A Day in the Life, available: false, scenes: []}
+  - {id: exploration, title: کاوش مسیرها, subtitle: Path Exploration, available: false, scenes: []}
+  - {id: action, title: برنامه اقدام, subtitle: Action Plan, available: false, scenes: []}

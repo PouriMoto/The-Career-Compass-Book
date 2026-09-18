@@ -1,0 +1,1030 @@
+{
+  "version": 1,
+  "sourceProject": "The-Career-Compass-Book",
+  "assets": [
+    {
+      "id": "audio-bg-music-mp3",
+      "sourcePath": "assets/audio/bg_music.mp3",
+      "bytes": 1666394,
+      "sha256": "d2fdf075509c6294949066c519d97daabf6b75412a93e2fc2b0955329f56eb87",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-bonk-mp3",
+      "sourcePath": "assets/audio/bonk.mp3",
+      "bytes": 5955,
+      "sha256": "23ea12d496647d87afc41d9bf79889d0837a6ab8c5075ac674390b023ca811d4",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-boom-mp3",
+      "sourcePath": "assets/audio/boom.mp3",
+      "bytes": 33854,
+      "sha256": "296393b7b8dcdf2e37b7d04b89e1392f61f7b4dbb924dec829a241a4579d205c",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-button0-mp3",
+      "sourcePath": "assets/audio/button0.mp3",
+      "bytes": 2507,
+      "sha256": "8a64cf9ca9a04a1bfa1e059cc25b13c9c4302460cdf5feedbccef0d643c31733",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-button1-mp3",
+      "sourcePath": "assets/audio/button1.mp3",
+      "bytes": 2507,
+      "sha256": "344e23206f642bea14c1cac02133fac6e7d7f7d054ee102e6d6ab91fd840ac03",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-button2-mp3",
+      "sourcePath": "assets/audio/button2.mp3",
+      "bytes": 1880,
+      "sha256": "826ca1285a8d3f8f5202921501a2b700d2ff0da188115cfa44f94e06816a0485",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-chimes-mp3",
+      "sourcePath": "assets/audio/chimes.mp3",
+      "bytes": 109174,
+      "sha256": "95eb20c36e351cc6026271ab368c5da17c7a12bf0cb69b8ed98e2010c58e248b",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-contagion-mp3",
+      "sourcePath": "assets/audio/contagion.mp3",
+      "bytes": 10826,
+      "sha256": "83b348431d1801346953054af8271dba674b1f6b4e624373712d14bef73a8279",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-party-mp3",
+      "sourcePath": "assets/audio/party.mp3",
+      "bytes": 32335,
+      "sha256": "ce14dd6a83921618a62935f30431fd95b7a192bac1938bcc16f9c59db3e2249a",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-party-short-mp3",
+      "sourcePath": "assets/audio/party_short.mp3",
+      "bytes": 12900,
+      "sha256": "1e878a887e6a50dc83c3e4d1b99a1976a0169b23b534f380caec9ed475445aab",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pencil-mp3",
+      "sourcePath": "assets/audio/pencil.mp3",
+      "bytes": 6096,
+      "sha256": "ee32d952a8a9ff60ecb0476a9a15642db94cffad4c1932306d0a0cf6441a76a3",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pencil-short-mp3",
+      "sourcePath": "assets/audio/pencil_short.mp3",
+      "bytes": 4368,
+      "sha256": "5e7e21ac15e82e8e3ff9c25efae1654b0088089ea921d3e9f71af3b73b3b94a6",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pluck0-mp3",
+      "sourcePath": "assets/audio/pluck0.mp3",
+      "bytes": 13213,
+      "sha256": "f625eb67b6042ec803eaf310cd76febaa89588bbb47b949ea0985a9a65a1f943",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pluck1-mp3",
+      "sourcePath": "assets/audio/pluck1.mp3",
+      "bytes": 12900,
+      "sha256": "67ad494f256306160cea4232183da3f139ac0544757e8850fdcd5a6ecb121785",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pluck2-mp3",
+      "sourcePath": "assets/audio/pluck2.mp3",
+      "bytes": 11646,
+      "sha256": "7c190a0d7450d47a5ff434aa2ce3c4925377d8be3399584509d436bf28170fc3",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pluck3-mp3",
+      "sourcePath": "assets/audio/pluck3.mp3",
+      "bytes": 11332,
+      "sha256": "b72f269993be9bbf66c0539ec92269c92bdf71e1386da0be0a658b84512eef4a",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-pop-mp3",
+      "sourcePath": "assets/audio/pop.mp3",
+      "bytes": 2194,
+      "sha256": "776b2d0c60c0250104f5c3e3b34377ad646627c6dee09bd5fed55ac8cb2914e9",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-scratch-in-mp3",
+      "sourcePath": "assets/audio/scratch_in.mp3",
+      "bytes": 7200,
+      "sha256": "55f6c0cd71e4511e252b1a25666852a334609af0dfe3b6ed1ca27d0101a6969b",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-scratch-out-mp3",
+      "sourcePath": "assets/audio/scratch_out.mp3",
+      "bytes": 9216,
+      "sha256": "5c2c714e463521538b5ef097cb9e7ea8e634a9a3eedfdfcbcdf5705ec1e1f987",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-snip0-mp3",
+      "sourcePath": "assets/audio/snip0.mp3",
+      "bytes": 4080,
+      "sha256": "b4196c1c07ff7df397a0190c52f835b303f364f14bbdf9c8e4cc8b4bdeaa0ec8",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-snip1-mp3",
+      "sourcePath": "assets/audio/snip1.mp3",
+      "bytes": 4080,
+      "sha256": "c2a3306cb7c2dac263b8db5a481f153d5dcdbe2e18fdf1103d208a31980705de",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-snip2-mp3",
+      "sourcePath": "assets/audio/snip2.mp3",
+      "bytes": 3792,
+      "sha256": "51d116a977955ba92060ac809a6e78b153067bbe77c6006323a5bf10e531f2bd",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-squeak-down-mp3",
+      "sourcePath": "assets/audio/squeak_down.mp3",
+      "bytes": 3792,
+      "sha256": "076ce9ad26317979ee010e5b3d935b8ab835bc38764c82d8537028ebb4112ae4",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-squeak-up-mp3",
+      "sourcePath": "assets/audio/squeak_up.mp3",
+      "bytes": 4368,
+      "sha256": "da3522ecc58cdbbe71f4ce60351d516f62da6dbb6f029800a26d2df9945aecd5",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "audio-trash-mp3",
+      "sourcePath": "assets/audio/trash.mp3",
+      "bytes": 11584,
+      "sha256": "4c0830cfe854e12893d21260c3fbf03d773e0df600a5f61c965e4253d29c5006",
+      "kind": "audio",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "optional-feedback-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-connected-png",
+      "sourcePath": "assets/spirits-images/bonus/connected.png",
+      "bytes": 368588,
+      "sha256": "97733bc86300653e73d9f390d4e11471950ea004873a0675d8601267817a25ed",
+      "kind": "image",
+      "dimensions": {
+        "width": 698,
+        "height": 698
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-connection1-png",
+      "sourcePath": "assets/spirits-images/bonus/connection1.png",
+      "bytes": 49450,
+      "sha256": "cd9c66e87e9c39ed7f949cb2023236e6efa18c73cfb218564693668c47e9bc13",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 300
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-connection2-png",
+      "sourcePath": "assets/spirits-images/bonus/connection2.png",
+      "bytes": 59346,
+      "sha256": "c6e05b3e5616fc09f34b7fa736d5b1bf776aa50baea046674a5131436b482ebe",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 300
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-contagion1-png",
+      "sourcePath": "assets/spirits-images/bonus/contagion1.png",
+      "bytes": 68388,
+      "sha256": "ceb66913996585481b991be0ab769a636416ad29af50d482757eea826584aa18",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 300
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-contagion2-png",
+      "sourcePath": "assets/spirits-images/bonus/contagion2.png",
+      "bytes": 92760,
+      "sha256": "4ff096e25abaf749657179576a091da27ff812baea5ebe59508331ca457b6afa",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 300
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-contagion3-png",
+      "sourcePath": "assets/spirits-images/bonus/contagion3.png",
+      "bytes": 66824,
+      "sha256": "9e5d05854df8f85276c74f1ec13f2f25e8904d7d265ae97547ca2777d3c404ef",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 300
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-contagion4-png",
+      "sourcePath": "assets/spirits-images/bonus/contagion4.png",
+      "bytes": 80562,
+      "sha256": "1482fb4fe0fbc8458c8675a36a39a0537583eab3fb35b5d2609058c726a97f24",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 300
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-ee-png",
+      "sourcePath": "assets/spirits-images/bonus/ee.png",
+      "bytes": 88608,
+      "sha256": "aaea32c7483c0b2d10d6963ac1cd89f0f25c319e0d38f27d6f6cb50abe76cae1",
+      "kind": "image",
+      "dimensions": {
+        "width": 662,
+        "height": 662
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-map-png",
+      "sourcePath": "assets/spirits-images/bonus/map.png",
+      "bytes": 477560,
+      "sha256": "f641866b91ef2e332e3c1e7927ae770246e97fa5eddd3aff68a1db5730da0a00",
+      "kind": "image",
+      "dimensions": {
+        "width": 788,
+        "height": 788
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-polygons-png",
+      "sourcePath": "assets/spirits-images/bonus/polygons.png",
+      "bytes": 101112,
+      "sha256": "3fd7f367b54b127d31f7288287af420f74baada02419d5c8d60d3fe092007bb1",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 500
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-surowieki-jpg",
+      "sourcePath": "assets/spirits-images/bonus/surowieki.jpg",
+      "bytes": 160363,
+      "sha256": "60557aaa14bf96890d9ef38b5ac2024599570cbaf6c5ebe09da5d31f75abefc0",
+      "kind": "image",
+      "dimensions": null,
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-bonus-trust-png",
+      "sourcePath": "assets/spirits-images/bonus/trust.png",
+      "bytes": 185159,
+      "sha256": "fe126dfd48f58616ff2a23ad48237fdb9754d0b00cad399240adb153407438f2",
+      "kind": "image",
+      "dimensions": {
+        "width": 608,
+        "height": 608
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-button-large-png",
+      "sourcePath": "assets/spirits-images/button_large.png",
+      "bytes": 88608,
+      "sha256": "895d0ceb7dc87dc122fac96d9605096492f5c6f2672912f2dc86c1fac15bf3ae",
+      "kind": "image",
+      "dimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-confetti-png",
+      "sourcePath": "assets/spirits-images/confetti.png",
+      "bytes": 28810,
+      "sha256": "627ed3af684526d75d9175eb6c2231009095e6f2183f8da6bb7049c001d00586",
+      "kind": "image",
+      "dimensions": {
+        "width": 500,
+        "height": 50
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-icons-blue-png",
+      "sourcePath": "assets/spirits-images/icons/blue.png",
+      "bytes": 49993,
+      "sha256": "0ab19e32573a651992e989d7b6c603dfc6fa437748c77f8acf9b21d1fe50def9",
+      "kind": "image",
+      "dimensions": {
+        "width": 174,
+        "height": 178
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-icons-gray-png",
+      "sourcePath": "assets/spirits-images/icons/gray.png",
+      "bytes": 8132,
+      "sha256": "1dc6a58e9b03d5f690e93c6a2341fb8d22042492b6017ed665cd344fa3728e5d",
+      "kind": "image",
+      "dimensions": {
+        "width": 60,
+        "height": 60
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-icons-red-png",
+      "sourcePath": "assets/spirits-images/icons/red.png",
+      "bytes": 31422,
+      "sha256": "1ace8299985b7d2c0ca8af72596f5be8204bf39a7324c18cb01d42221982bf14",
+      "kind": "image",
+      "dimensions": {
+        "width": 129,
+        "height": 151
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-icons-yellow-png",
+      "sourcePath": "assets/spirits-images/icons/yellow.png",
+      "bytes": 74065,
+      "sha256": "c9c02de76fb55b8331fa02d9bc34488b8b39fce01fe2a7f4475ed6a5ebee2217",
+      "kind": "image",
+      "dimensions": {
+        "width": 248,
+        "height": 226
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-line-png",
+      "sourcePath": "assets/spirits-images/line.png",
+      "bytes": 4502,
+      "sha256": "305de0becddd8685a486fcf28ecaf7576d77b3acd888cc675a27a753add812eb",
+      "kind": "image",
+      "dimensions": {
+        "width": 300,
+        "height": 20
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-nasa-png",
+      "sourcePath": "assets/spirits-images/nasa.png",
+      "bytes": 452403,
+      "sha256": "b70131a3002614bb116ac3b6c1180e1d77c885625d4c983f877c396c74745d9a",
+      "kind": "image",
+      "dimensions": {
+        "width": 850,
+        "height": 900
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-peeps-png",
+      "sourcePath": "assets/spirits-images/peeps.png",
+      "bytes": 291368,
+      "sha256": "852f64770eba55b2ad1463e3c1850e95a6829fd8cad99b5e2583149568e3ec5a",
+      "kind": "image",
+      "dimensions": {
+        "width": 2200,
+        "height": 200
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-pencil-png",
+      "sourcePath": "assets/spirits-images/pencil.png",
+      "bytes": 48945,
+      "sha256": "84ff0ae4c193684736a865685d5a11346fb30ac8aaf9f26f5d6985d4d453e745",
+      "kind": "image",
+      "dimensions": {
+        "width": 600,
+        "height": 200
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-red-button-png",
+      "sourcePath": "assets/spirits-images/red_button.png",
+      "bytes": 535154,
+      "sha256": "38ed5d78d4b220a464beda87b4f64b6827b5db2333166d2eb38242fdbf55a93e",
+      "kind": "image",
+      "dimensions": {
+        "width": 800,
+        "height": 500
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-sandbox-tools-png",
+      "sourcePath": "assets/spirits-images/sandbox_tools.png",
+      "bytes": 134484,
+      "sha256": "70eed1c3ef98cdaabb836a83b238af995289c642a2140137f7f13566c78b31a8",
+      "kind": "image",
+      "dimensions": {
+        "width": 1200,
+        "height": 200
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-scratch-png",
+      "sourcePath": "assets/spirits-images/scratch.png",
+      "bytes": 703826,
+      "sha256": "33dd5d4cc57ad7a60c9291350f1f2bd3bece572be970c8d84339bf6a657b3548",
+      "kind": "image",
+      "dimensions": {
+        "width": 1422,
+        "height": 8000
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-small-world-png",
+      "sourcePath": "assets/spirits-images/small_world.png",
+      "bytes": 319703,
+      "sha256": "ba1efd5202df2393b74c51bcdb2c50d33a27e8eb152fb1c02e7f904c421ebb2d",
+      "kind": "image",
+      "dimensions": {
+        "width": 1940,
+        "height": 568
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-small-world-fa-png",
+      "sourcePath": "assets/spirits-images/small_world_fa.png",
+      "bytes": 299079,
+      "sha256": "d9363fa0bbc2563234e7d7cc8dbb64f9e370e7822c1cac5da4e2f1f2b194180c",
+      "kind": "image",
+      "dimensions": {
+        "width": 1940,
+        "height": 568
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-tutorial-connect-png",
+      "sourcePath": "assets/spirits-images/tutorial_connect.png",
+      "bytes": 13535,
+      "sha256": "87d89bf8fa5e4541a5dd09570d8e6d4699318b4fc9a65083dfcb89503e33ad72",
+      "kind": "image",
+      "dimensions": {
+        "width": 600,
+        "height": 200
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-tutorial-disconnect-png",
+      "sourcePath": "assets/spirits-images/tutorial_disconnect.png",
+      "bytes": 7790,
+      "sha256": "e2ad6df4fe34e25e69de86645bda38763b9381ea3fc3231fbe4070432f36ce7b",
+      "kind": "image",
+      "dimensions": {
+        "width": 600,
+        "height": 200
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-ui-arrow-png",
+      "sourcePath": "assets/spirits-images/ui/arrow.png",
+      "bytes": 4956,
+      "sha256": "ce218527e9f7151a81353c0388356e5ff86f1ca98c8e3eed7c57d0bdce921b63",
+      "kind": "image",
+      "dimensions": {
+        "width": 100,
+        "height": 100
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-ui-bonus-png",
+      "sourcePath": "assets/spirits-images/ui/bonus.png",
+      "bytes": 9148,
+      "sha256": "ee03ce1a62b7620bde17ab1b1742fec6eef407ea2ee7db37c26e19a6051b89f8",
+      "kind": "image",
+      "dimensions": {
+        "width": 100,
+        "height": 200
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-ui-sharing-png",
+      "sourcePath": "assets/spirits-images/ui/sharing.png",
+      "bytes": 20296,
+      "sha256": "8caffc2b5dd96b1b85bc748c966c3b935ae50c8910e97d2a0e50ec598c1c3e8b",
+      "kind": "image",
+      "dimensions": {
+        "width": 300,
+        "height": 120
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    },
+    {
+      "id": "spirits-images-ui-sound-png",
+      "sourcePath": "assets/spirits-images/ui/sound.png",
+      "bytes": 10845,
+      "sha256": "3944f9075cd3b0dfb76692a67f52ba862a2ad572483c598d21bc05079332e29b",
+      "kind": "image",
+      "dimensions": {
+        "width": 240,
+        "height": 120
+      },
+      "license": "unknown",
+      "sourceUrl": null,
+      "reviewStatus": "not-previewed",
+      "approvedUses": [],
+      "suggestedUses": [
+        "illustration-review-required"
+      ],
+      "inUse": false
+    }
+  ]
+}

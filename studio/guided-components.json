@@ -1,0 +1,12 @@
+{
+ "snapshot":"guided-workbench-2026-09-18",
+ "implemented":[
+  {"entry":"@compass/studio-kit/guided","role":"typed answers, progress, restore validation","limits":"linear steps; stage selection open for review"},
+  {"entry":"@compass/studio-kit/guided-rules","role":"evidence-linked local insights","limits":"starter rules only"},
+  {"entry":"@compass/studio-kit/interactions","role":"choice, multi, rank, scale, items and wheel fields","limits":"CSS supplied separately; labels currently Persian"},
+  {"entry":"@compass/studio-kit/sketch","role":"seeded illustrative SVG","limits":"schematic, not analytical"},
+  {"entry":"@compass/studio-kit/visual-map","role":"SVG report model rendering","limits":"wheel and card path layouts; no standalone export"}
+ ],
+ "projectLocal":["GuidedApp coordinator","guidedRepository","course JSON","report orchestration"],
+ "notImplemented":["graph branching","typed time planner","typed evidence matrix","AI","historical report snapshots","standalone PDF PNG SVG exporters"]
+}

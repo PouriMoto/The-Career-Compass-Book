@@ -1,0 +1,3 @@
+import Dexie from 'dexie';
+import {freshGuided,guidedStateSchema,type GuidedState} from '@compass/studio-kit/guided';
+export function guidedRepository(){const db=new Dexie('career-compass-guided-v2');db.version(1).stores({sessions:'id'});const table=db.table('sessions');return {async load(){const row=await table.get('local');return row?guidedStateSchema.parse(row.state):freshGuided();},async save(state:GuidedState,expected:number){await db.transaction('rw',table,async()=>{const row=await table.get('local');if((row?.state.revision??0)!==expected)throw Error('conflict');await table.put({id:'local',state});});}};}

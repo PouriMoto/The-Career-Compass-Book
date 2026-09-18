@@ -1,0 +1,17 @@
+﻿id: 1
+slug: setting-out
+title: شروع مسیر
+subtitle: Setting Out
+scenes:
+  - id: setting-out-exercise
+    kind: exercise
+    title: نقطه شروع
+    prompt: امروز دوست داری چه چیزی را بهتر بفهمی؟
+  - id: setting-out-visualization
+    kind: visualization
+    title: تصویر مقصد
+    prompt: یک روز کاری خوب برای تو چه شکلی است؟
+  - id: setting-out-reflection
+    kind: reflection
+    title: بازتاب
+    prompt: از این تمرین چه چیزی با خودت می‌بری؟

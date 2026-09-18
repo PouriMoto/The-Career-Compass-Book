@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "package": "@compass/studio-kit",
+  "components": [
+    {"name":"AppShell","export":"./ui","status":"implemented","uses":["RTL learning apps","guided forms"],"requires":["styles.css"]},
+    {"name":"ActionButton","export":"./ui","status":"implemented","uses":["primary actions"],"requires":["styles.css"]},
+    {"name":"ProgressMeter","export":"./ui","status":"implemented","uses":["stage progress"],"requires":["styles.css"],"contract":"max > 0"}
+  ],
+  "planned": ["SceneEditor","ProgressPath","ChoiceCard","Wheel","Timeline","DragBucket"]
+}

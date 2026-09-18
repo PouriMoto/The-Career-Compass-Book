@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import sharp from 'sharp';
+fs.mkdirSync('public/icons',{recursive:true});
+const svg='<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#246657"/><circle cx="256" cy="256" r="155" fill="none" stroke="#faf8f1" stroke-width="12"/><path d="M256 112L300 256L256 400L212 256Z" fill="#f2cc75"/><path d="M112 256L256 212L400 256L256 300Z" fill="#faf8f1"/><circle cx="256" cy="256" r="18" fill="#246657"/></svg>';
+for(const size of [192,512])await sharp(Buffer.from(svg)).resize(size,size).png().toFile(`public/icons/icon-${size}.png`);
+fs.copyFileSync('public/icons/icon-512.png','public/icons/maskable-512.png');
+const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
+const urls=['/','/legacy','/manifest.webmanifest','/icons/icon-192.png','/icons/icon-512.png','/icons/maskable-512.png',...walk('.next/static').filter(f=>/\.(js|css|woff2)$/.test(f)).map(f=>'/'+f.replaceAll('\\','/').replace('.next/','_next/'))];
+const build=fs.readFileSync('.next/BUILD_ID','utf8');
+const version=crypto.createHash('sha256').update(build+JSON.stringify(urls)).digest('hex').slice(0,16);
+const template=fs.readFileSync('studio/pwa-worker.template.js','utf8');
+fs.writeFileSync('public/sw.js',template.replace('__CACHE__',JSON.stringify('career-compass-shell-'+version)).replace('__URLS__',JSON.stringify(urls)));
+console.log(`PWA ${version}: ${urls.length} shell assets`);
